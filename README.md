@@ -1,4 +1,6 @@
 # ETH_SMB
+## Run
+This repository is based on the ETH Lectures [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html)
 ## Rviz
 visualize the 3D point cloud and the laser scan by choosing topics /rslidar_scan and /scan <br><br>
 visualize SMB robot by adding Robot Model plugin <br><br>
