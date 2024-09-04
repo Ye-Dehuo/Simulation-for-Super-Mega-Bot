@@ -5,4 +5,4 @@ visualize SMB robot by adding Robot Model plugin <br>
 visualize coordinate frame by adding TF display plugin <br>
 visualize markers near the pillar by adding Marker plugin <br>
 ## Play bag
-The bag file ·111·
+The bag file `asd`
