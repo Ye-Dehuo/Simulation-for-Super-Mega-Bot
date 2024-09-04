@@ -1,7 +1,9 @@
 # ETH_SMB
 ## Run
-This repository is based on the ETH Lectures [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html)
-## Rviz
+This repository is based on the ETH lectures [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html)  
+
+After `catkin build` the workspace `/smb_ws`, You can run the simulation through `roslaunch smb_highlevel_controller smb_highlevel_controller.launch start_robot:="true"`. Also, in oder to realize the emergency stop function, you can run the simulation through `roslaunch smb_highlevel_controller smb_highlevel_controller.launch start_robot :="true" auto_emergenc_stop :="true" prior_collision :="true"`or `roslaunch smb_highlevel_controller smb_highlevel_controller.launch start_robot :="true" auto_emergenc_stop :="true" post_collision :="true"`. The fomer will stop the SMB robot when the robot is close enough to the obstacle, while the latter will stop the robot after crashing with the obstacle 
+ ## Rviz
 visualize the 3D point cloud and the laser scan by choosing topics /rslidar_scan and /scan <br><br>
 visualize SMB robot by adding Robot Model plugin <br><br>
 visualize coordinate frame by adding TF display plugin <br><br>
