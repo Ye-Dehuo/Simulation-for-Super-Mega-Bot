@@ -1,1 +1,0 @@
-/home/zyx/Workspaces/smb_ws/devel/.private/roscpp_tutorials/share/roseus/ros/roscpp_tutorials/srv/TwoInts.l

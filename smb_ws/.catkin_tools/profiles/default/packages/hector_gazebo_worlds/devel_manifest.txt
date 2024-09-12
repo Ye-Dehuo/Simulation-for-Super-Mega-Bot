@@ -1,5 +1,0 @@
-hector_gazebo/hector_gazebo_worlds
-/home/zyx/Workspaces/smb_ws/devel/.private/hector_gazebo_worlds/cmake.lock /home/zyx/Workspaces/smb_ws/devel/./cmake.lock
-/home/zyx/Workspaces/smb_ws/devel/.private/hector_gazebo_worlds/share/hector_gazebo_worlds/cmake/hector_gazebo_worldsConfig.cmake /home/zyx/Workspaces/smb_ws/devel/share/hector_gazebo_worlds/cmake/hector_gazebo_worldsConfig.cmake
-/home/zyx/Workspaces/smb_ws/devel/.private/hector_gazebo_worlds/share/hector_gazebo_worlds/cmake/hector_gazebo_worldsConfig-version.cmake /home/zyx/Workspaces/smb_ws/devel/share/hector_gazebo_worlds/cmake/hector_gazebo_worldsConfig-version.cmake
-/home/zyx/Workspaces/smb_ws/devel/.private/hector_gazebo_worlds/lib/pkgconfig/hector_gazebo_worlds.pc /home/zyx/Workspaces/smb_ws/devel/lib/pkgconfig/hector_gazebo_worlds.pc
