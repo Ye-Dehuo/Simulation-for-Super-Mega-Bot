@@ -1,9 +1,11 @@
-# ETH_SMB
+# Simulation for Super Mega Bot
 
 ## How to initiate?
 `git clone` this repo to the workspace directory  
 
-`cd ~/path/to/ETH_SMB/src`
+`cd ~/path/to/Simulation_for_Super_Mega_Bot/src`, initiate the **workspace** by `catkin_init_workspace`
+
+`cd ..` to  `/Simulation_for_Super_Mega_Bot`
 
 ## Run
 This repository is based on the ETH lectures [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html)  
