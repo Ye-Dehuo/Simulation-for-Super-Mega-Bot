@@ -1,7 +1,9 @@
 # Simulation for Super Mega Bot
 This repository is based on the ETH lectures [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html)(a great ) which can provide great help in learning and applying ROS for begeinners  
 
-The development of this project was greatly inspired and assisted by [NelsenEW/eth-zurich-solution](https://github.com/NelsenEW/eth-zurich-solution.git) which has more details and guidance for the ETH 
+The project is one of the solutions of the excercises from  [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html)
+
+The development of this project was greatly inspired and assisted by [NelsenEW/eth-zurich-solution](https://github.com/NelsenEW/eth-zurich-solution.git) which has more details and guidance for the ETH excercises
 
 ## How to initiate?
 `git clone` this repo to the workspace directory  
@@ -27,10 +29,10 @@ In oder to realize the emergency stop function, can run the simulation through o
 
 The fomer will stop the SMB robot when the robot is close enough to the obstacle(**prior_collision stop**), while the latter will stop the robot after crashing with the obstacle(**post_collision stop**)
  ## How to set Rviz?
-visualize the 3D point cloud and the laser scan by choosing topics /rslidar_scan and /scan <br><br>
-visualize SMB robot by adding Robot Model plugin <br><br>
-visualize coordinate frame by adding TF display plugin <br><br>
-visualize markers near the pillar by adding Marker plugin <br>
+Visualize the 3D point cloud and the laser scan by choosing topics /rslidar_scan and /scan <br><br>
+Visualize SMB robot by adding Robot Model plugin <br><br>
+Visualize coordinate frame by adding TF display plugin <br><br>
+Visualize markers near the pillar by adding Marker plugin <br>
 ## How to play bag?
 The bag file `smb_navigation.bag` which is located in `/src/smb_highlevel_controller/bag` contains sensor measurements from wheel odometry, inertial measurement unit (IMU) and laser scanner <br>
   
