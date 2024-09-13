@@ -3,7 +3,7 @@
 ## How to initiate?
 `git clone` this repo to the workspace directory  
 
-111
+`cd ~/path/to/ETH_SMB/src`
 
 ## Run
 This repository is based on the ETH lectures [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html)  
