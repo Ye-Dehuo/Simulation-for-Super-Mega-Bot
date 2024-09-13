@@ -17,13 +17,13 @@ If above steps all successed, now can try to run the simulation
 Run the simulation through `roslaunch smb_highlevel_controller smb_highlevel_controller.launch start_robot:="true"`  
 
 ### Emergency stop
-In oder to realize the emergency stop function, you can run the simulation through the following two commands  
+In oder to realize the emergency stop function, can run the simulation through one of the following commands  
 
 `roslaunch smb_highlevel_controller smb_highlevel_controller.launch start_robot:=true auto_emergency_stop:=true prior_collision:=true`  
 
 `roslaunch smb_highlevel_controller smb_highlevel_controller.launch start_robot:=true auto_emergency_stop:=true post_collision:=true`  
 
-The fomer will stop the SMB robot when the robot is close enough to the obstacle, while the latter will stop the robot after crashing with the obstacle 
+The fomer will stop the SMB robot when the robot is close enough to the obstacle(**prior_collision stop**), while the latter will stop the robot after crashing with the obstacle(**post_collision stop**)
  ## Rviz
 visualize the 3D point cloud and the laser scan by choosing topics /rslidar_scan and /scan <br><br>
 visualize SMB robot by adding Robot Model plugin <br><br>
