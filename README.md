@@ -1,5 +1,5 @@
 # Simulation for Super Mega Bot
-This repository is based on the ETH courses [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html)(a great ) which can provide great help in learning and applying ROS for begeinners  
+This repository is based on the ETH courses [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html) which can provide great help in learning and applying ROS for begeinners  
 
 The project is one of the solutions of the excercises from  the ETH courses. The project 
 
