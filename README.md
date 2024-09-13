@@ -18,7 +18,7 @@ If above steps all successed, now can try to run the simulation
 
 ## How to run the Simulation?
 ### Regular
-Run the simulation through `roslaunch smb_highlevel_controller smb_highlevel_controller.launch start_robot:="true"`  
+Run the simulation through `roslaunch smb_highlevel_controller smb_highlevel_controller.launch start_robot:="true"`. In this way, the SMB robot will operate normally and head towards the target, but eventually, it will collide with obstacles and will not stop  
 
 ### Emergency stop
 In oder to realize the emergency stop function, can run the simulation through one of the following commands  
