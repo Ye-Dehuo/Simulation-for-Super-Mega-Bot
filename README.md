@@ -5,7 +5,11 @@
 
 `cd ~/path/to/Simulation_for_Super_Mega_Bot/src`, initiate the **workspace** by `catkin_init_workspace`
 
-`cd ..` to  `/Simulation_for_Super_Mega_Bot`
+`cd ..` to  `/Simulation_for_Super_Mega_Bot`, compile the workspace by `catkin build`(recommended)
+
+Set workspace environment by `source devel/setup.bash`, or revise `/.bashrc` with adding `source ~/path/to/Simulation_for_Super_Mega_Bot/devel/setup.bash` directly  
+
+If above steps all successed, now can try to run the simulation
 
 ## Run
 This repository is based on the ETH lectures [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html)  
