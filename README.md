@@ -1,5 +1,7 @@
 # Simulation for Super Mega Bot
-This repository is based on the ETH lectures [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html). The development of this project repository was greatly inspired and assisted by [NelsenEW/eth-zurich-solution](https://github.com/NelsenEW/eth-zurich-solution.git)
+This repository is based on the ETH lectures [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html)  
+
+The development of this project repository was greatly inspired and assisted by [NelsenEW/eth-zurich-solution](https://github.com/NelsenEW/eth-zurich-solution.git)(with more details and guidance)
 
 ## How to initiate?
 `git clone` this repo to the workspace directory  
