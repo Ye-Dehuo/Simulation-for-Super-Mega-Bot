@@ -1,5 +1,5 @@
 # Simulation for Super Mega Bot
-This repository is based on the ETH lectures [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html)  
+This repository is based on the ETH lectures [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html). And this repsitory  
 
 ## How to initiate?
 `git clone` this repo to the workspace directory  
@@ -8,7 +8,9 @@ This repository is based on the ETH lectures [Programming for Robotics - ROS](ht
 
 `cd ..` to  `/Simulation_for_Super_Mega_Bot`, compile the workspace by `catkin build`(recommended)
 
+<p style="line-height:1.5;">
 Set workspace environment by `source devel/setup.bash`, or revise `.bashrc` file with adding `source ~/path/to/Simulation_for_Super_Mega_Bot/devel/setup.bash` directly  
+</p>
 
 If above steps all successed, now can try to run the simulation
 
