@@ -1,3 +1,8 @@
+<style>
+body {
+
+ line-height: 1.5;
+ 
 # Simulation for Super Mega Bot
 This repository is based on the ETH lectures [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html)  
 
@@ -38,5 +43,8 @@ You can **play the bag** by roslaunching `ekf_localization.launch`. When playing
 <p align="center"> path plot of the bag </p>  
 
 ![image](https://github.com/Ye-Dehuo/ETH_SMB/blob/main/img/rviz%20display%20of%20the%20%20bag.png)
-<p align="center"> rviz display of the bag </p>  
+<p align="center"> rviz display of the bag </p>
+
+}
+ <style>
 
