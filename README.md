@@ -1,10 +1,3 @@
-<style>
-body {
-
- line-height: 1.5;
- }
- <style>
- 
 # Simulation for Super Mega Bot
 This repository is based on the ETH lectures [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html)  
 
