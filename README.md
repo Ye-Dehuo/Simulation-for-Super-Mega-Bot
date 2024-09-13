@@ -6,11 +6,11 @@ The development of this project was greatly inspired and assisted by [NelsenEW/e
 ## How to initiate?
 `git clone` this repo to the workspace directory  
 
-`cd ~/path/to/Simulation_for_Super_Mega_Bot/src`, initiate the **workspace** by `catkin_init_workspace`
+`cd ~/path/to/Simulation-for-Super-Mega-Bot/src`, initiate the **workspace** by `catkin_init_workspace`
 
-`cd ..` to  `/Simulation_for_Super_Mega_Bot`, compile the workspace by `catkin build`(recommended)
+`cd ..` to  `/Simulation-for-Super-Mega-Bot`, compile the workspace by `catkin build`(recommended)
 
-Set workspace environment by `source devel/setup.bash`, or revise `.bashrc` file with adding `source ~/path/to/Simulation_for_Super_Mega_Bot/devel/setup.bash` directly  
+Set workspace environment by `source devel/setup.bash`, or revise `.bashrc` file with adding `source ~/path/to/Simulation-for-Super-Mega-Bot/devel/setup.bash` directly  
 
 If above steps all successed, now can try to run the simulation
 
