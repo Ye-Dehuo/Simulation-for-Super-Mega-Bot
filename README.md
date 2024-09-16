@@ -24,7 +24,7 @@ Run the simulation through `roslaunch smb_highlevel_controller smb_highlevel_con
 <p align="center"> Gazebo display </p>  
 
 ### Emergency stop
-In oder to realize the emergency stop function, can run the simulation through one of the following commands  
+In oder to realize the emergency stop function, you can run the simulation through one of the following commands  
 
 `roslaunch smb_highlevel_controller smb_highlevel_controller.launch start_robot:=true auto_emergency_stop:=true prior_collision:=true`  
 
