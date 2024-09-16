@@ -1,7 +1,7 @@
 # Simulation for Super Mega Bot
 This repository is based on the ETH courses [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html) which can provide great help in learning and applying ROS for begeinners  
 
-The project is one of the solutions of the excercises from  the ETH courses. It aims to enable the SMB robot to perform target tracking, motion control, and emergency stop based on sensor information (such as odometry, laser scanning, IMU, etc.). Additionally, it focuses on mastering the use of fundamental ROS tools such as Gazebo, Rviz, Rqt, and bag files  
+The project is one of the solutions of the [excercises](https://github.com/Ye-Dehuo/Simulation-for-Super-Mega-Bot/tree/main/doc/Exercise) from  the ETH courses. It aims to enable the SMB robot to perform target tracking, motion control, and emergency stop based on sensor information (such as odometry, laser scanning, IMU, etc.). Additionally, it focuses on mastering the use of fundamental ROS tools such as Gazebo, Rviz, Rqt, and bag files  
 
 The development of this project was greatly inspired and assisted by [NelsenEW/eth-zurich-solution](https://github.com/NelsenEW/eth-zurich-solution.git) which has more details and guidance for the ETH excercises
 
