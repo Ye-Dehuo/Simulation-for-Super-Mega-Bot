@@ -33,10 +33,10 @@ In oder to realize the emergency stop function, can run the simulation through o
 The fomer will stop the SMB robot when the robot is close enough to the obstacle(**prior_collision stop**), while the latter will stop the robot after crashing with the obstacle(**post_collision stop**)  
 
 ![demo](https://github.com/Ye-Dehuo/Simulation-for-Super-Mega-Bot/blob/main/img/Prior%20collision%20stop%20demonstration.gif)  
-<p align="center"> Prior collision stop demo </p>  
+<p align="center"> prior collision stop demo </p>  
 
 ![demo](https://github.com/Ye-Dehuo/Simulation-for-Super-Mega-Bot/blob/main/img/Post%20collision%20stop%20demonstration.gif)  
-<p align="center"> Post collision stop demo </p>  
+<p align="center"> post collision stop demo </p>  
 
 ![image](https://github.com/Ye-Dehuo/Simulation-for-Super-Mega-Bot/blob/main/img/Rqt%20display.png)  
 <p align="center"> Rqt display </p>  
