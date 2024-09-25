@@ -111,7 +111,7 @@ void SmbHighlevelController::moveToGoal(const geometry_msgs::PoseStamped& goalPo
   ROS_INFO_STREAM("velMsg.angular.z [rad/s]: [" << velMsg.angular.z << "]");
 }
 
-void SmbHighlevelController::transformOdom(geometry_msgs::PoseStamped& pose, geometry_msgs::PoseStamped& targetPose)
+void SmbHighlevelController::transformOdom(geometry_msgs::PoseStamped& pose, geometry_msgs::PoseStamped& targetPose) // ensure the showVisMarker() function correctly displays the position of the target point 
 {
   try{
     targetPose = tfBuffer_.transform(pose, "odom", ros::Duration(0));// transform the coordinate frame of goalPose from rslidar to odom
@@ -120,7 +120,7 @@ void SmbHighlevelController::transformOdom(geometry_msgs::PoseStamped& pose, geo
   }
 }
 
-void SmbHighlevelController::showVisMarker(geometry_msgs::PoseStamped& goalPose)
+void SmbHighlevelController::showVisMarker(geometry_msgs::PoseStamped& goalPose) // show a target point
 {
   visualization_msgs::Marker pillarMarker;
 
