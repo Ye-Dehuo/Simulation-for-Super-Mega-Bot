@@ -16,7 +16,13 @@ Set workspace environment by `source devel/setup.bash`, or revise `.bashrc` file
 
 If above steps all successed, now can try to run the simulation
 
-## How to run the Simulation?
+## The controller for SMB robot
+PI controller is designed for SMB linear velocity and PD controller is designed for SMB angular velocity
+
+You can also choose to use the constant linear velocity control method directly (as explained in 'smb_highlevel_controller/src
+/SmbHighlevelController.cpp'), but need adjust collision_threshold（in '/congig/default.yaml') to -3.2 to realize post collision stop
+
+## How to run the simulation?
 ### Regular
 Run the simulation through `roslaunch smb_highlevel_controller smb_highlevel_controller.launch start_robot:="true"`. In this way, the SMB robot will operate normally and head towards the target, but eventually, it will collide with obstacles and will not stop 
 
