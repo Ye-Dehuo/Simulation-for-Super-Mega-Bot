@@ -1,0 +1,15 @@
+scan_topic: /scan
+imu_topic: /imu0
+x_vel: 3
+p_gain_ang: 30
+reduced_p_gain_ang: 2.5
+d_gain_ang: 10
+p_gain_vel: 0.3
+i_gain_vel: 0.3
+angular_prev_error_init: 0
+linear_prev_error_init: 0
+service_name: /start_stop_service
+emergency_stop_radius: 3
+kpAng_change_radius: 2
+collision_threshold: -1.8
+

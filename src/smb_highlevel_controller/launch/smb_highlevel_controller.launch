@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="start_robot" default="false"/>
+  <arg name="auto_emergency_stop" default="false"/>
+  <arg name="prior_collision" default="false"/>
+  <arg name="post_collision" default="false"/>
+   
+  <!-- Launching the SMB simulation with robocup14_spl_field world -->
+ <![CDATA[
+  <include file="$(find smb_gazebo)/launch/smb_gazebo.launch">
+    <arg name="world_file" value="/usr/share/gazebo-11/worlds/robocup14_spl_field.world"/>
+ ]]>
+   
+  <!-- Launching the SMB simulation with single pillar world -->
+  <include file="$(find smb_gazebo)/launch/smb_gazebo.launch">
+    <arg name="world_file" value="$(find smb_highlevel_controller)/worlds/singlePillar.world"/>
+
+  <!-- setting laser scan -->
+    <arg name="laser_enabled" value="true"/>
+    <arg name="laser_scan_min_height" value="-0.2"/>
+    <arg name="laser_scan_max_height" value="1.0"/>
+  </include>
+  
+  <!-- Launching the smb highlevel controller node -->
+  <node name="smb_highlevel_controller" pkg="smb_highlevel_controller" type="smb_highlevel_controller" output="screen">
+    <param name="start_robot" type="boolean" value="$(arg start_robot)"/>
+      <rosparam file="$(find smb_highlevel_controller)/config/default.yaml" command="load"/>
+  </node>
+  
+  <!-- Launching the stop condition node -->
+  <node if="$(arg auto_emergency_stop)" name="stop_condition" pkg="smb_highlevel_controller" type="stop_condition" output="screen">
+      <param name="prior_collision" type="boolean" value="$(arg prior_collision)"/>
+      <param name="post_collision" type="boolean" value="$(arg post_collision)"/>
+      <rosparam file="$(find smb_highlevel_controller)/config/default.yaml" command="load"/>
+  </node>
+
+
+  <!-- Launching the teleoperation keyboard node -->
+  <![CDATA[ 
+  <!-- node name="teleop" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" launch-prefix="xterm -e"/ --> 
+  ]]>
+
+  <!-- Launching RViz -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find smb_highlevel_controller)/rviz/smb_highlevel_controller.rviz"/>
+  
+  <!-- Launching rqt multiplot for path plot-->
+  <node name="rqt_multiplot" pkg="rqt_multiplot" type="rqt_multiplot" args="--multiplot-config $(find smb_highlevel_controller)/config/Path_Plot.xml --multiplot-run-all"/>
+  
+  <!-- Launching rqt multiplot for IMU plot -->
+  <![CDATA[
+  <node name="rqt_multiplot_imu" pkg="rqt_multiplot" type="rqt_multiplot" args="--multiplot-config $(find smb_highlevel_controller)/config/IMU_Multiplot.xml --multiplot-run-all"/>
+  ]]>
+  
+    <!-- Launching rqt multiplot for angular velocity plot -->
+  <![CDATA[
+  <node name="rqt_multiplot_angularVelocity" pkg="rqt_multiplot" type="rqt_multiplot" args="--multiplot-config $(find smb_highlevel_controller)/config/Angular_Velocity_Plot.xml --multiplot-run-all"/>
+  ]]>
+  
+</launch>
