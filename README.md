@@ -5,6 +5,12 @@ The project is one of the solutions of the [excercises](https://github.com/Ye-De
 
 The development of this project was greatly inspired and assisted by [NelsenEW/eth-zurich-solution](https://github.com/NelsenEW/eth-zurich-solution.git) which has more details and guidance for the ETH excercises
 
+## The controller for SMB robot
+PI controller is designed for SMB linear velocity control and PD controller is designed for SMB angular velocity control
+
+You can also choose to use the constant linear velocity control method directly (as explained in `/smb_highlevel_controller/src
+/SmbHighlevelController.cpp`), but need adjust the param `collision_threshold`（in `/congig/default.yaml`) to -3.2 to realize post collision stop
+
 ## How to initiate?
 `git clone` this repo to the workspace directory  
 
@@ -15,12 +21,6 @@ The development of this project was greatly inspired and assisted by [NelsenEW/e
 Set workspace environment by `source devel/setup.bash`, or revise `.bashrc` file with adding `source ~/path/to/Simulation-for-Super-Mega-Bot/devel/setup.bash` directly  
 
 If above steps all successed, now can try to run the simulation
-
-## The controller for SMB robot
-PI controller is designed for SMB linear velocity control and PD controller is designed for SMB angular velocity control
-
-You can also choose to use the constant linear velocity control method directly (as explained in `/smb_highlevel_controller/src
-/SmbHighlevelController.cpp`), but need adjust the param `collision_threshold`（in `/congig/default.yaml`) to -3.2 to realize post collision stop
 
 ## How to run the simulation?
 ### Regular
