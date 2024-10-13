@@ -43,6 +43,6 @@
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find smb_highlevel_controller)/rviz/smb_highlevel_controller.rviz"/>
   
   <!-- Launching rqt multiplot -->
-  <node name="rqt_multiplot" pkg="rqt_multiplot" type="rqt_multiplot" args="--multiplot-config $(find smb_highlevel_controller)/config/IMU_MultiPlot.xml --multiplot-run-all"/>
+  <node name="rqt_multiplot" pkg="rqt_multiplot" type="rqt_multiplot" args="--multiplot-config $(find smb_highlevel_controller)/config/IMU_Multiplot.xml --multiplot-run-all"/>
 
 </launch>
