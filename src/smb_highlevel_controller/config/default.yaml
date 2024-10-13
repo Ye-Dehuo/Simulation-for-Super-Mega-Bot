@@ -1,8 +1,0 @@
-scan_topic: /scan
-imu_topic: /imu0
-x_vel: 3
-p_gain_ang: 30
-p_gain_vel: 0.2
-service_name: /start_stop_service
-emergency_stop_radius: 3
-collision_threshold: -3.2
