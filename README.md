@@ -8,8 +8,7 @@ The development of this project was greatly inspired and assisted by [NelsenEW/e
 ## The controller for SMB robot
 PI controller is designed for SMB linear velocity control and PD controller is designed for SMB angular velocity control
 
-You can also choose to use the constant linear velocity control method directly (as explained in `/smb_highlevel_controller/src
-/SmbHighlevelController.cpp`), but need adjust the param `collision_threshold`（in `/congig/default.yaml`) to -3.2 to realize post collision stop
+You can also choose to use the constant linear velocity control method directly (as explained in `smb_highlevel_controller/src/SmbHighlevelController.cpp`), but need adjust the param `collision_threshold`（in `config/default.yaml`) to `-3.2` to realize post collision stop
 
 ## How to initiate?
 `git clone` this repo to the workspace directory  
