@@ -1,0 +1,8 @@
+prefix=/home/zyx/GZKJ/ETH_SMB_2/devel/.private/hector_gazebo_plugins
+
+Name: hector_gazebo_plugins
+Description: Description of hector_gazebo_plugins
+Version: 0.5.4
+Cflags: -I/home/zyx/GZKJ/ETH_SMB_2/devel/.private/hector_gazebo_plugins/include -I/home/zyx/GZKJ/ETH_SMB_2/src/hector_gazebo/hector_gazebo_plugins/include
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs geographic_msgs geometry_msgs nav_msgs tf message_runtime

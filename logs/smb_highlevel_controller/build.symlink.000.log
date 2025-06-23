@@ -1,0 +1,5 @@
+Symlinking /home/zyx/GZKJ/ETH_SMB_2/devel/share/smb_highlevel_controller/cmake/smb_highlevel_controllerConfig.cmake
+Symlinking /home/zyx/GZKJ/ETH_SMB_2/devel/share/smb_highlevel_controller/cmake/smb_highlevel_controllerConfig-version.cmake
+Symlinking /home/zyx/GZKJ/ETH_SMB_2/devel/lib/pkgconfig/smb_highlevel_controller.pc
+Symlinking /home/zyx/GZKJ/ETH_SMB_2/devel/lib/smb_highlevel_controller/stop_condition
+Symlinking /home/zyx/GZKJ/ETH_SMB_2/devel/lib/smb_highlevel_controller/smb_highlevel_controller

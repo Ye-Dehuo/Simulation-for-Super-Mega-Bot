@@ -1,0 +1,1 @@
+/home/zyx/GZKJ/ETH_SMB_2/devel/.private/smb_control/lib/pkgconfig/smb_control.pc

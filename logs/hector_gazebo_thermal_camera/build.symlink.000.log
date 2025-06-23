@@ -1,0 +1,5 @@
+Symlinking /home/zyx/GZKJ/ETH_SMB_2/devel/share/hector_gazebo_thermal_camera/cmake/hector_gazebo_thermal_cameraConfig.cmake
+Symlinking /home/zyx/GZKJ/ETH_SMB_2/devel/share/hector_gazebo_thermal_camera/cmake/hector_gazebo_thermal_cameraConfig-version.cmake
+Symlinking /home/zyx/GZKJ/ETH_SMB_2/devel/lib/libgazebo_ros_thermal_depth_camera.so
+Symlinking /home/zyx/GZKJ/ETH_SMB_2/devel/lib/libgazebo_ros_thermal_camera.so
+Symlinking /home/zyx/GZKJ/ETH_SMB_2/devel/lib/pkgconfig/hector_gazebo_thermal_camera.pc

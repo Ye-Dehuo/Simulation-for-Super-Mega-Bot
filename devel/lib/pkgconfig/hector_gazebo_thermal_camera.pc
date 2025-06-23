@@ -1,0 +1,1 @@
+/home/zyx/GZKJ/ETH_SMB_2/devel/.private/hector_gazebo_thermal_camera/lib/pkgconfig/hector_gazebo_thermal_camera.pc

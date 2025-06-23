@@ -1,0 +1,1 @@
+/home/zyx/GZKJ/ETH_SMB_2/devel/.private/hector_gazebo_plugins/share/gennodejs/ros/hector_gazebo_plugins/_index.js

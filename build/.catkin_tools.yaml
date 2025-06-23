@@ -1,0 +1,6 @@
+devel_space: /home/zyx/GZKJ/ETH_SMB_2/devel
+install: false
+install_space: /home/zyx/GZKJ/ETH_SMB_2/install
+profile: default
+source_space: /home/zyx/GZKJ/ETH_SMB_2/src
+workspace: /home/zyx/GZKJ/ETH_SMB_2

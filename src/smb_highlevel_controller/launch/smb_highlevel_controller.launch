@@ -51,7 +51,7 @@
   <node name="rqt_multiplot_imu" pkg="rqt_multiplot" type="rqt_multiplot" args="--multiplot-config $(find smb_highlevel_controller)/config/IMU_Multiplot.xml --multiplot-run-all"/>
   ]]>
   
-    <!-- Launching rqt multiplot for angular velocity plot -->
+  <!-- Launching rqt multiplot for angular velocity plot -->
   <![CDATA[
   <node name="rqt_multiplot_angularVelocity" pkg="rqt_multiplot" type="rqt_multiplot" args="--multiplot-config $(find smb_highlevel_controller)/config/Angular_Velocity_Plot.xml --multiplot-run-all"/>
   ]]>

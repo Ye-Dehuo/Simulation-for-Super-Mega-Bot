@@ -13,6 +13,8 @@ SmbHighlevelController::SmbHighlevelController(ros::NodeHandle& nodeHandle) :
       ros::requestShutdown();
     }
 
+  Time_prev_ = ros::Time::now().toSec(); // initiate Time_prev_
+
   scanSubscriber_ = nodeHandle_.subscribe(scanTopic_, 10, &SmbHighlevelController::scanCallback, this);// subscribe /scan topic
 
   pclSubscriber_ = nodeHandle_.subscribe("/rslidar_points", 10, &SmbHighlevelController::pclCallback, this);
@@ -92,11 +94,11 @@ void SmbHighlevelController::getGoalPose(geometry_msgs::PoseStamped& goalPose, c
 {
   auto minDistanceIterator = std::min_element(message->ranges.begin(), message->ranges.end());
   auto distance = *minDistanceIterator;
-  auto minDistanceIndex = std::distance(message->ranges.begin(), minDistanceIterator);
+  auto minDistanceIndex = std::distance(message->ranges.begin(), minDistanceIterator); // get the index of the closest point in ranges
   auto ang = message->angle_min + message->angle_increment * minDistanceIndex;
 
   goalPose.header.frame_id = "rslidar";// goalPose in rslidar frame
-  goalPose.header.stamp = ros::Time(0);
+  goalPose.header.stamp = ros::Time::now();
   goalPose.pose.position.x = distance * cos(ang);
   goalPose.pose.position.y = distance * sin(ang);
   goalPose.pose.position.z = 0;
@@ -113,18 +115,15 @@ void SmbHighlevelController::moveToGoal(const geometry_msgs::PoseStamped& goalPo
 {
   geometry_msgs::Twist velMsg;
 
-  angular_error = atan2(goalPose.pose.position.y, goalPose.pose.position.x);
+  angular_error = atan2(goalPose.pose.position.y, goalPose.pose.position.x); // obtain angular error
 
-  derivative = angular_error - angular_prev_error;
+  ROS_INFO_STREAM("angular error [rad]: [" << angular_error << "]");
+
+  derivative = (angular_error - angular_prev_error) / (goalPose.header.stamp.toSec() - Time_prev_); //
 
   linear_error = sqrt(pow(goalPose.pose.position.x, 2) + pow(goalPose.pose.position.y, 2));
 
-  intergral = linear_error + linear_prev_error;
-
-  if (linear_error < kpAngChangeRadius_) {
-      kpAng_ = reduced_kpAng_;
-  }
-
+  intergral = linear_error + linear_prev_error * (goalPose.header.stamp.toSec() - Time_prev_);
 
   if(isStart_){
 
@@ -136,9 +135,11 @@ void SmbHighlevelController::moveToGoal(const geometry_msgs::PoseStamped& goalPo
 
   }
 
-  linear_prev_error = linear_error;
+  linear_prev_error = linear_error; // obtain linear error
 
   angular_prev_error = angular_error;
+
+  Time_prev_ = goalPose.header.stamp.toSec();
 
   twistPublisher_.publish(velMsg);// publish twist command to SMB
 
@@ -160,7 +161,7 @@ void SmbHighlevelController::showVisMarker(geometry_msgs::PoseStamped& goalPose)
   visualization_msgs::Marker pillarMarker;
 
   pillarMarker.header.frame_id = "odom";// publish the point in odom frame
-  pillarMarker.header.stamp = ros::Time(0);
+  pillarMarker.header.stamp = ros::Time::now();
   pillarMarker.ns = "smb_highlevel_controller";
   pillarMarker.id = 0;
   pillarMarker.type = visualization_msgs::Marker::SPHERE;
